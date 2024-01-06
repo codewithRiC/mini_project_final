@@ -1,0 +1,158 @@
+body{
+    background-attachment: fixed;
+  
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+.Rectangle-1 {
+   
+    width: 30%;
+    height: 100vh !important;
+    box-shadow: 0 0 36.8px 3.2px rgb(35 53 156 / 36%);
+    background-color: #fff;
+    float: right;
+}
+
+.logo{
+    display: flex;
+    
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.logo .lo{
+    float: left;
+
+}
+
+.logo .he{
+    padding-top: 60px;
+    font-size: .8rem;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+
+.Rectangle-2 {
+    background: url("back15.jpg") no-repeat ;
+    background-size: cover;
+
+    width: 70%;
+    height: 100vh !important;
+    background-color: #f3f4fa;
+    float: left;
+}
+
+.login_header_1 {
+    padding-left: 120px;
+    height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 41.5px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-align: left;
+    color: #053557;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.login_header_2 {
+    padding-left: 130px;
+    height: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #5a215c;
+    margin-top: 4%;
+    margin-left: 15%;
+}
+
+.Vector-Smart-Object {
+    width: 598px;
+    height: 469px;
+    object-fit: contain;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+.SDS-Next-Logo {
+    width: 169px;
+    height: 82px;
+    object-fit: contain;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.login_header_3 {
+    height: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    color: #616161;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.input-box {
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.ui-inputfield .ui-inputtext .ui-widget .ui-state-default .ui-corner-all .input-box{
+    height: 40px !important;
+    border-radius: 10px !important;
+    border: solid 1px #616161 !important;
+}
+
+.input-button {
+    width: 85% !important;
+    height: 56px !important;
+    border-radius: 10px !important;
+    background-color: #7b26fa;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+
+.Forgot-Password {
+    height: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    text-align: right;
+    color: #616161;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.Forgot-Password.ui-commandlink {
+    color: #616161 !important;
+}

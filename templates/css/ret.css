@@ -1,0 +1,122 @@
+
+.add {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input ,select,textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    display: flex;
+   
+}
+
+
+button {
+    background-color: #080e32;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+}
+
+.btn a{
+    background-color: #080e32;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+}
+
+.btn a:hover{
+    background-color: #4b64f4;
+}
+
+button:hover{
+    background-color: #4b64f4;
+  
+}
+
+.add a{
+   
+    text-align: center;
+    
+    font-size: medium;
+    color: #e7e8ef;
+
+}
+
+/* reatiler view table code */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: rgba(59, 126, 143, 0.767); /* semi-transparent white background */
+  color: #000000; /* adjust font color to make it more visible */
+}
+
+table td,
+table th {
+  border: 1px solid #a2c8eb;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #8ae9f4;
+}
+
+table tr:hover {
+  background-color: #5f82d3ea;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

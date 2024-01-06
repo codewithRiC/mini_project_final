@@ -1,0 +1,204 @@
+body{
+    background-attachment: fixed;
+    box-sizing: border-box;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(234, 246, 246);
+
+}
+
+.topheader{
+    background-color: rgb(22, 22, 135);
+    padding: 20px;
+    display: flex;
+  justify-content: left;
+    
+   margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(234, 246, 246);
+    border-radius: 4px;
+    
+}
+
+.topheader .log-out {
+    padding-left: 650px;
+   width: 100px;
+  
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topheader .log-out a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.topheader .log-out .log-out-icon {
+    color: #fff;
+    padding-left: 10px;
+}
+.topheader .topheader-name {
+    
+    padding-left: 20px;
+}
+.total{
+    width: 100%;
+    display: flex;
+}
+
+.rect1 {
+    padding:2px;
+    border: 2px solid rgb(30, 154, 146) ;
+    float: left;
+    margin-top: 2px;
+    border-radius: 4px;
+    width: 15%;
+    box-shadow: 5px 5px 15px rgb(145, 233, 240);
+}
+
+.rect1 .head{
+    border-radius: 2px;
+    background-color: rgb(234, 246, 246);
+    display: inline;
+    text-align: center;
+    
+   
+}    
+
+
+
+.rect1 .head .profile-logo{
+    font-size: 40px;
+    
+}
+
+.rect1 .head .username{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(116, 18, 18);
+    
+    font-size: 0.9rem;
+    
+}
+
+.rect1 .menubar{
+    padding-top: 65px;
+    
+    background-color: rgb(234, 246, 246);
+    border-radius: 2px;
+    padding-left: 20px;
+   
+    border-top: 2px solid rgb(30, 154, 146);
+    text-align: left;
+}
+
+.rect1 .menubar a{
+    text-decoration: none;
+    color: black;
+    font-weight:900;
+    font-size:20px;
+    
+
+}
+
+.rect1 .menubar a:hover{
+    color: rgb(92, 157, 236);
+    transition: 0.5s;
+    
+}
+
+
+
+
+.rect2{
+    /* display: inline;
+    justify-content:center ;
+    
+    float: right;
+    */
+   width: 100%;
+   margin-left: 10px;
+    
+}
+
+.rect2 .dash .header{
+    margin-top: 2px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: rgb(110, 235, 237);
+    background-color: rgb(22, 22, 135);
+    border: 2px solid rgb(30, 154, 146);
+    border-radius: 2px;
+    border-radius: 4px;
+    
+}
+
+
+span{
+    background-color: rgb(22, 22, 135);
+    color: antiquewhite;
+}
+
+.rect2 .box-container{
+    display: flex;
+    
+    
+    
+    justify-content: space-evenly;
+    margin-top: 2px;
+    padding: 2px;
+    
+   
+}
+
+.box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    border: 2px solid rgb(43, 187, 180);
+    outline-offset: -1rem;
+    text-align: center;
+    border-radius: 4px;
+    width: 27%;
+    box-shadow: 8px 8px 5px rgb(145, 233, 240);
+}
+
+.box-container .box:hover{
+    background-color: rgb(170, 251, 251);
+    transition: 1s;
+}
+
+
+
+
+.logo img{
+  height: 100px;
+}
+
+/* for home page graph */
+
+.rect2 .dash .graph{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* for about us */
+
+.about h1{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif ; */
+    font-family: 'Sriracha',cursive;
+    padding: 20px;
+    color: rgb(175, 6, 65);
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.about li{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(2, 13, 29);
+    
+}

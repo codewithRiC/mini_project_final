@@ -1,0 +1,115 @@
+body{
+
+    background : url("back14.jpg");
+    background-size: cover;
+   background-attachment:fixed;
+
+}
+.Rectangle-1 {
+ 
+    padding-top: 120px;
+   padding-right: 200px;
+    float: right;
+}
+
+.Rectangle-1 .he{
+padding-left: 20px;
+color: antiquewhite;
+font-size: 20px;
+}
+
+
+
+
+
+.Rectangle-2 {
+   
+
+    width: 70%;
+    height: 100vh !important;
+   
+    float: left;
+}
+
+.login_header_1 {
+    padding-left: 120px;
+    height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 41.5px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-align: left;
+    color: #053557;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.login_header_2 {
+    padding-left: 130px;
+    height: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #5a215c;
+    margin-top: 4%;
+    margin-left: 15%;
+}
+
+
+
+
+.login_header_3 {
+    height: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    color: #0e0d0d;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding-right: 15px;
+    
+}
+
+.input-box {
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.ui-inputfield.ui-inputtext.ui-widget.ui-state-default.ui-corner-all.input-box{
+    height: 40px !important;
+    border-radius: 10px !important;
+    border: solid 1px #616161 !important;
+    width: 200px;
+}
+
+.input-button {
+    width: 85% !important;
+    height: 56px !important;
+    border-radius: 10px !important;
+    background-color: #7b26fa;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #f4f0f0;
+}
+
+
