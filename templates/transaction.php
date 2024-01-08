@@ -104,9 +104,9 @@
                 <h1 > Transaction<span>SECTION</span></h1>
             </div>
             <table>
-                       <tr>
+                       <tr >
                          
-                         <th>Shop Name</th>
+                         <th style="background-color:white; font-weight:800; font-size:35px ">SHOP NAME</th>
                         </tr>
                        <tr>
                        <?php
@@ -114,7 +114,7 @@
                            {
                         ?>
                           
-                          <td style="text-align:center"><a href="trans_edit.php?ret_id=<?php echo $row['sno']?>" style="text-decoration:none;color:black;"><?php echo $row['shop_name'];?></a></td>
+                          <td style="text-align:center; font-size:20px; font-weight:bolder; "><a href="trans_edit.php?ret_id=<?php echo $row['sno']?>" style="text-decoration:none;color:black;"><?php echo $row['shop_name'];?></a></td>
                           
                          
                         </tr>

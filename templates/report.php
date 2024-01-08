@@ -85,12 +85,12 @@
                 <h2>Reports Generation</h2>
                 <form action="report_pdf.php" method="post" id="retadd">
                     
-                    <label for="from">FROM:</label>
-                    <input type="date" id="from" name="from" required>
+                    <label for="from">FROM:</label><br>
+                    <input type="date" id="from" name="from" required style="width:50%"><br>
 
                     
-                    <label for="to">TO:</label>
-                    <input type="date" id="to" name="to" required>
+                    <label for="to">TO:</label><br>
+                    <input type="date" id="to" name="to" required  style="width:50%">
  
                     <div class="btn">
                     <button type="submit" name="generate_excel">Generate Excel</button>

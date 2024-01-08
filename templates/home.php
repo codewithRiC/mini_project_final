@@ -120,71 +120,7 @@ $balance = $credit - $debit;
                 </div>
             </div>
             <div class="graph">
-              <div class="graph1">
-              <table id="transaction">
-  <tr>
-   
-    <th>Shop</th>
-    <th>Amount</th>
-  
-   
-  </tr>
-  <?php 
-    
-  
-    // $query1  = "SELECT retailer.shop_name,transaction.amount
-    // FROM `retailer`
-    // INNER JOIN `transaction` ON transaction.sno=retailer.sno ";
-    //  $result1 =  mysqli_query($con,$query1);
-
-    $query = "SELECT * FROM `retailer`";
-    $result =  mysqli_query($con,$query);
-   
-
-     
-
-       while($row = mysqli_fetch_assoc($result)){
-  ?>
-  <tr>
-    <td><?php echo $row['shop_name'] ;?></td>
-    
-   <?php 
- $sno = $row['sno'];
-    $query1 = "SELECT * FROM `transaction` WHERE  trans_type='Credit' and sno='$sno'";
-    $result1 =  mysqli_query($con,$query1);
-   
-    $Credit = 0;
-// Loop through the result set and calculate the total
-while ($row = mysqli_fetch_assoc($result1)) {
-   $Credit += $row['amount'];
-}
-
-$query2 = "SELECT * FROM `transaction` WHERE trans_type='Debit' and sno='$sno'";
-$result2 =  mysqli_query($con,$query2);
-
-$Debit = 0;
-// Loop through the result set and calculate the total
-while ($row = mysqli_fetch_assoc($result1)) {
-$Debit += $row['amount'];
-}
-
-$Balance = $Credit - $Debit;
-
-
-
-   
-   ?>
-    <td style="background-color:green;color:white"> + ₹<?php echo $Balance ;?></td>
-    
-      
-   
-    
-  </tr>
-  
-<?php }  ?>
-  
-</table>
-              </div>
+             
               <div class="graph2"> <canvas id="pi" style="width:100%;max-width:600px;height:300px"></canvas></div>
 
             </div>

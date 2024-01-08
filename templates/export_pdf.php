@@ -23,39 +23,77 @@ function filterData(&$str)
         $str = '"' . str_replace('"', '""', $str) . '"';
 }
 
-$fields = array('Transaction_id', 'date', 'Amount', 'Bill no');
+if (isset($_GET['ret_id'])) {
+    $sno = $_GET['ret_id'];
+// Fetch shop information from retailer table
+$shopQuery = "SELECT shop_name, ret_add, ret_phn ,ret_type FROM retailer WHERE sno = $sno"; 
+$shopResult = mysqli_query($con, $shopQuery);
+$shopData = mysqli_fetch_assoc($shopResult);
+
+$shopName = $shopData['shop_name'];
+$shopAddress = $shopData['ret_add'];
+$shopPhoneNumber = $shopData['ret_phn'];
+$shoptype =$shopData['ret_type'];
+
+$fields = array('S.No', 'Trans_id', 'Date', 'Amount', 'Bill No', 'Trans_Type');
 
 $pdf = new TCPDF();
 $pdf->setPrintHeader(false);
 $pdf->setPrintFooter(false);
 $pdf->AddPage();
 
-// Set font
+$pdf->SetFont('times', 'B', 20);
+$pdf->Cell(0, 10, "Company Name: UTKAL AGENCY", 0, 1, 'C');
+
+$pdf->SetFont('helvetica', 'B', 14);
+$pdf->Cell(0, 10, "Shop Name: $shopName", 0, 1, 'C');
+
+$pdf->SetFont('courier', '', 12);
+$pdf->Cell(0, 10, "Add: $shopAddress", 0, 1, 'C');
+
+$pdf->SetFont('courier', '', 12);
+
+// Assuming $shopPhoneNumber is a numeric phone number
+
+$pdf->Cell(0, 10, "Phone number: $shopPhoneNumber", 0, 1, 'C');
+
+
+$pdf->SetFont('courier', '', 12);
+$pdf->Cell(0, 10, "Shop Type: $shoptype", 0, 1, 'C');
+
+$pdf->Ln();
+
 $pdf->SetFont('times', '', 12);
 
-// Add table headers
 $pdf->SetFillColor(200, 220, 255);
-$pdf->Cell(30, 10, $fields[0], 1, 0, 'C', 1);
-$pdf->Cell(40, 10, $fields[1], 1, 0, 'C', 1);
-$pdf->Cell(30, 10, $fields[2], 1, 0, 'C', 1);
-$pdf->Cell(30, 10, $fields[3], 1, 1, 'C', 1);
+foreach ($fields as $field) {
+    $pdf->Cell(25, 10, $field, 1, 0, 'C', 1);
+}
+$pdf->Ln();
 
-if(isset($_GET['ret_id'])){
-    $sno=$_GET['ret_id'];
-$query = "SELECT * FROM transaction where sno='$sno' ORDER BY trans_id asc";
-$result = mysqli_query($con, $query);
+$query = "SELECT t.trans_id, r.shop_name, t.date, t.amount, t.bill_no, t.trans_type
+          FROM transaction t
+          JOIN retailer r ON t.sno = r.sno
+          WHERE r.sno = $sno
+          ORDER BY t.trans_id ASC";
 
-while ($row = mysqli_fetch_assoc($result)) {
-    array_walk($row, 'filterData');
-    $pdf->Cell(30, 10, $row['trans_id'], 1);
-    $pdf->Cell(40, 10, $row['date'], 1);
-    $pdf->Cell(30, 10, $row['amount'], 1);
-    $pdf->Cell(30, 10, $row['bill_no'], 1, 1);
+    $result = mysqli_query($con, $query);
+    $srno = 1;
+    while ($row = mysqli_fetch_assoc($result)) {
+        array_walk($row, 'filterData');
+        $pdf->Cell(25, 10, $srno++, 1);
+        $pdf->Cell(25, 10, $row['trans_id'], 1);
+        $pdf->Cell(25, 10, $row['date'], 1);
+        $pdf->Cell(25, 10, $row['amount'], 1);
+        $pdf->Cell(25, 10, $row['bill_no'], 1);
+        $pdf->Cell(25, 10, $row['trans_type'], 1);
+
+        $pdf->Ln();  
+    }
 }
 
-}
 // Output PDF to browser
-$pdf->Output('MyData.pdf', 'D');
+$pdf->Output('Report.pdf', 'D');
 
 // Close the database connection
 mysqli_close($con);

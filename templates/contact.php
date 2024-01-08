@@ -81,7 +81,17 @@
             <div class="header">
                 <h1 > Contact<span>US</span></h1>
             </div>
-           <div class=""></div>
+           <div class="info">
+           <h3>Contact info</h3>
+                <a href="#" class="links"><i class="fa-solid fa-phone"></i> +8957526122</a>
+                <a href="#" class="links"><i class="fa-solid fa-phone"></i> +8957226122</a>
+                <a href="#" class="links"><i class="fa-solid fa-envelope"></i> mitulrajrishi1999@gmail.com</a>
+                <a href="#" class="links"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="http://linkedin.com/in/rishi-raj-sahoo" class="links"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="github.com/codewithRiC" class="links"><i class="fa-brands fa-github"></i> codewithRiC</a>
+                <a href="#" class="links"><i class="fa-solid fa-map-marker-alt"></i> Nimapara , India-752440</a>
+                
+           </div>
       </section>
     </div>
 </div>   
